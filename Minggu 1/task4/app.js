@@ -20,8 +20,9 @@ const newData = {
 }
 newData.name = 'Cep Guna';
 newData.email = 'cepgunawidodo@gmail.com';
-newData.hobby = 'Bersepeda';
+newData.hobby = ['Bersepeda', 'Main Bola'];
 console.log(newData)
+console.log(data)
 // B
 const {street, city} = data.address;
 console.log(street)

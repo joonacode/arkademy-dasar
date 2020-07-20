@@ -2,7 +2,7 @@
 const biodata = {
     name: 'Cep Guna Widodo',
     age: 18,
-    hobbies: ['Bersepeda'],
+    hobbies: ['Bersepeda', 'Main Bola'],
     isMaried: false,
     schoolList: [
         {
@@ -39,7 +39,7 @@ const biodata = {
             skillName: 'Laravel',
             level: 'Beginner'
         }, {
-            skillName: 'SQL',
+            skillName: 'MySQL',
             level: 'Beginner'
         }
     ],
@@ -51,7 +51,7 @@ console.log(biodata)
 const {name, age, hobbies, isMaried, schoolList, skills, interestInCoding} = biodata;
 document.getElementById('nama').innerHTML = name;
 document.getElementById('umur').innerHTML = age+' tahun';
-document.getElementById('hobi').innerHTML = hobbies;
+document.getElementById('hobi').innerHTML = hobbies.join(', ');
 document.getElementById('isMaried').innerHTML = isMaried ? 'Sudah' : 'Belum';
 document.getElementById('sekolah').innerHTML = `<ul>${schoolList.map(v => 
     `<li>${v.name}</li>
@@ -60,9 +60,12 @@ document.getElementById('sekolah').innerHTML = `<ul>${schoolList.map(v =>
         <li>Tahun Keluar: ${v.yearOut}</li>
         <li>Major: ${v.major ? v.major : '-'}</li>
     </ul>`
-)}</ul>`;
+).join('')}</ul>`;
 document.getElementById('skill').innerHTML = `<ul>${skills.map(v => 
     `<li>${v.skillName}</li>
-    <li>${v.level}</li>`
-)}</ul>`;
+    <ul>
+        <li>${v.level}</li>
+    </ul>
+    `
+).join('')}</ul>`;
 document.getElementById('interestInCoding').innerHTML = interestInCoding  ? 'Iya' : 'Tidak';
