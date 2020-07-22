@@ -7,7 +7,9 @@ const total = (Number(mtk) + Number(bahasaIndonesia) + Number(bahasaInggris) + N
 const option = [{nilai: 90,message: "A"},{nilai: 80,message: "B"},{nilai: 70,message: "C"},{nilai: 60,message: "D"},{nilai: 0,message: "E"}];
 
 const nilaiArr = [Number(mtk), Number(bahasaIndonesia), Number(bahasaInggris), Number(ipa)];
-const checkNilai = nilaiArr.every((v) => v < 101 && v >= 0 && typeof v === "number");
+
+const checkNilai = nilaiArr.every((v) => v <= 100 && v >= 0 && typeof v === "number");
+
 if (!mtk || !bahasaIndonesia || !bahasaInggris || !ipa) {
     alert("Semua mapel harus di isi");
 } else if(!checkNilai) {        

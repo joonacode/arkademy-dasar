@@ -1,4 +1,4 @@
-let param = Number(prompt('Masukan angka'))
+const param = Number(prompt('Masukan angka'))
 
 param ? printSegitiga(param) : console.log('Data harus number')
 function printSegitiga(param) {
@@ -14,3 +14,9 @@ function printSegitiga(param) {
         console.log('Data harus number')
     }
 }
+
+// 12345
+// 1234
+// 123
+// 12
+// 1

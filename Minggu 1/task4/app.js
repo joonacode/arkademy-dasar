@@ -16,11 +16,11 @@ const data = {
 // A
 
 const newData = {
-    ...data
+    ...data,
+    email : 'cepgunawidodo@gmail.com',
+    name : 'Cep Guna',
+    hobby : ['Bersepeda', 'Main Bola']
 }
-newData.name = 'Cep Guna';
-newData.email = 'cepgunawidodo@gmail.com';
-newData.hobby = ['Bersepeda', 'Main Bola'];
 console.log(newData)
 console.log(data)
 // B

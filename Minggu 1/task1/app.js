@@ -31,16 +31,16 @@ const biodata = {
             level: 'Beginner'
         }, {
             skillName: 'PHP',
-            level: 'Beginner'
+            level: 'Advanced'
         }, {
             skillName: 'Codeigniter',
-            level: 'Beginner'
+            level: 'Advanced'
         }, {
             skillName: 'Laravel',
             level: 'Beginner'
         }, {
             skillName: 'MySQL',
-            level: 'Beginner'
+            level: 'Advanced'
         }
     ],
     interestInCoding: true
