@@ -30,7 +30,7 @@ contoh: array.push('widodo')
 6. pop()
 
 Method pop menghapus elemen terakhir dari array
-contoh: array.pop('widodo')
+contoh: array.pop()
 
 
 7. Number()
@@ -56,3 +56,6 @@ string.toLowerCase()
 Method trim() menghilangkan spasi dari kedua sisi string awal dan akhir: 
 string.trim()
 */
+
+const x = [2, 6,1, 10];
+console.log(x.every(v => v > 5))
