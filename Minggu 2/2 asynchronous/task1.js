@@ -4,7 +4,7 @@ const checkWeekdays = day => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             const dataDay = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-            const check = dataDay.find(item => item === day)
+            const check = dataDay.find(item => item === day.toLowerCase())
             if(check){
                 resolve(check)
             }else{
@@ -15,7 +15,7 @@ const checkWeekdays = day => {
 }
 
 // Pengunaan then dan catch
-checkWeekdays('monday')
+checkWeekdays('Monday')
     .then(res => console.log(res))
     .catch(err => console.log(err.message))
 

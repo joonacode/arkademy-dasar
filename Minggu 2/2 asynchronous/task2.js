@@ -5,7 +5,7 @@ const getMonth = callback => {
     setTimeout(() => {
         const error = false;
         const month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'October', 'November', 'Desmber']
-        !error ? callback(null, month) : callback(new Error('Sorry data not found', []))
+        !error ? callback(null, month) : callback(new Error('Sorry data not found'),[])
     }, 4000)
 }
 
